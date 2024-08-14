@@ -1,33 +1,63 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Form Pendaftaran</title>
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        form {
+            width: 350px;
+            border: 1px solid #ddd;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        label {
+            display: inline-block;
+            width: 100px;
+            margin-bottom: 10px;
+            vertical-align: top;
+        }
+        input[type="text"], textarea {
+            width: calc(100% - 110px);
+            margin-bottom: 10px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        textarea {
+            height: 80px;
+            resize: none;
+        }
+    </style>
+</head>
+<body>
 
-    <body>
-        <form>
-            <table>
-                <tr>
-                    <td><label for="nama">Nama</label></td>
-                    <td style="padding-left: 17px;">:</td>
-                    <td><input type="text" id="nama" placeholder="Masukan Nama disini"></td>
-                </tr>
-                <tr>
-                    <td><label for="eml">Email</label></td>
-                    <td style="padding-left: 17px;">:</td>
-                    <td><input type="email" id="eml" name="email" placeholder="Masukan Email disini"></td>
-                </tr>
-                <tr>
-                    <td><label for="adrs">Address</label></td>
-                    <td style="padding-left: 17px;">:</td>
-                    <td><textarea name="addres" id="adrs" rows="4" cols="50"></textarea></td>
-                </tr>
-                <tr>
-                    <td><label for="country_code">Postcode</label></td>
-                    <td style="padding-left: 17px;">:</td>
-                    <td><input type="text" id="country_code" name="country_code" placeholder="Masukan Postcode"></td>
-                </tr>
-            </table>
-        </form>
-    </body>
+    <form>
+        <label for="name">Name:</label>
+        <td><input type="text" id="nama" placeholder="Masukan Nama disini"></td>
+
+        <label for="email">Email:</label>
+        <td><input type="text" id="nama" placeholder="Masukan Email disini"></td>
+
+        <label for="address">Address:</label>
+        <td><input type="text" id="nama" placeholder="Masukan Alamat disini"></td>
+        
+
+        <label for="postcode">Postcode:</label>
+        <td><input type="text" id="nama" placeholder="Masukan Kodepos disini"></td>
+    </form>
+
+</body>
 </html>
